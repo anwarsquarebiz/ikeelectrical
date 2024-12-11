@@ -30,6 +30,14 @@
 /*=====================================
    01. Typography CSS
 ===================================== */
+:root {
+  --cta-color: #2334B8;
+}
+
+.brand-color {
+  color: var(--cta-color);
+}
+
 body {
   color: #303030;
   font-size: 15px;
@@ -41,12 +49,12 @@ body {
 
 /* Remove text-shadow in selection highlight. */
 ::-moz-selection {
-  background: #eeb644;
+  background: var(--cta-color);
   color: #FFFFFF;
   text-shadow: none;
 }
 ::selection {
-  background: #eeb644;
+  background: var(--cta-color);
   color: #FFFFFF;
   text-shadow: none;
 }
@@ -308,13 +316,13 @@ button:active, button:focus {
   color: #1b1b1c;
 }
 .btn-white:hover {
-  background-color: #eeb644;
-  border-color: #eeb644;
+  background-color: var(--cta-color);
+  border-color: var(--cta-color);
   color: #FFFFFF;
 }
 .btn-brand {
-  background-color: #eeb644;
-  border-color: #eeb644;
+  background-color: var(--cta-color);
+  border-color: var(--cta-color);
   border-radius: 25px;
   color: #1b1b1c;
 }
@@ -342,8 +350,8 @@ button:active, button:focus {
   line-height: 48px;
 }
 .btn-bordered:hover {
-  border-color: #eeb644;
-  color: #eeb644;
+  border-color: var(--cta-color);
+  color: var(--cta-color);
 }
 
 /*----------------------
@@ -421,7 +429,7 @@ button:active, button:focus {
 3.5 - Tippy Customization
 ----------------------------------*/
 .tippy-popper .tippy-tooltip {
-  background-color: #eeb644;
+  background-color: var(--cta-color);
   border-radius: 3px;
   font-size: 14px;
   font-weight: 400;
@@ -429,16 +437,16 @@ button:active, button:focus {
   padding: 7px 13px;
 }
 .tippy-popper[x-placement^=top] .tippy-arrow {
-  border-top-color: #eeb644 !important;
+  border-top-color: var(--cta-color) !important;
 }
 .tippy-popper[x-placement^=bottom] .tippy-arrow {
-  border-bottom-color: #eeb644 !important;
+  border-bottom-color: var(--cta-color) !important;
 }
 .tippy-popper[x-placement^=left] .tippy-arrow {
-  border-left-color: #eeb644 !important;
+  border-left-color: var(--cta-color) !important;
 }
 .tippy-popper[x-placement^=right] .tippy-arrow {
-  border-right-color: #eeb644 !important;
+  border-right-color: var(--cta-color) !important;
 }
 
 /*--------------------------------
@@ -466,7 +474,7 @@ button:active, button:focus {
   display: none;
 }
 .ht-mfp .mfp-close {
-  background-color: #eeb644;
+  background-color: var(--cta-color);
   color: #FFFFFF;
   padding: 0;
   text-align: center;
@@ -487,10 +495,10 @@ button:active, button:focus {
   }
 }
 .ht-mfp .mfp-close:hover {
-  background-color: #eeb644;
+  background-color: var(--cta-color);
 }
 .ht-mfp .mfp-arrow {
-  background-color: #eeb644;
+  background-color: var(--cta-color);
   opacity: 1;
   margin-left: 15px;
   height: 55px;
@@ -580,7 +588,7 @@ blockquote:before, .blockquote:before {
   }
 }
 blockquote-title, .blockquote-title {
-  color: #eeb644;
+  color: var(--cta-color);
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
@@ -644,7 +652,7 @@ blockquote-title, .blockquote-title {
 
 .btn-video-popup {
   border-radius: 50%;
-  background-color: #eeb644;
+  background-color: var(--cta-color);
   color: #FFFFFF;
   display: inline-block;
   font-size: 20px;
@@ -664,14 +672,14 @@ blockquote-title, .blockquote-title {
   background-color: #f8f8f8 !important;
 }
 .bg-brand {
-  background-color: #eeb644;
+  background-color: var(--cta-color);
 }
 .bg-blackSoft {
   background-color: #1b1b1c;
 }
 
 .text-brand {
-  color: #eeb644;
+  color: var(--cta-color);
 }
 
 /*==========================
@@ -803,7 +811,7 @@ blockquote-title, .blockquote-title {
   text-transform: uppercase;
 }
 .header-area .nav li a:hover {
-  color: #eeb644;
+  color: var(--cta-color);
 }
 
 @media only screen and (max-width: 575.98px) {
@@ -933,7 +941,7 @@ blockquote-title, .blockquote-title {
   color: #1b1b1c;
 }
 .mini-cart-wrap .mini-product__info .title a:hover {
-  color: #eeb644;
+  color: var(--cta-color);
 }
 .mini-cart-wrap .mini-product__info .mini-calculation {
   display: -webkit-box;
@@ -952,14 +960,14 @@ blockquote-title, .blockquote-title {
   vertical-align: middle;
 }
 .mini-cart-wrap .mini-product__info .mini-calculation .price span {
-  color: #eeb644;
+  color: var(--cta-color);
 }
 .mini-cart-wrap .mini-product__info .mini-calculation .remove-pro {
   font-size: 18px;
   line-height: 1;
 }
 .mini-cart-wrap .mini-product__info .mini-calculation .remove-pro:hover {
-  color: #eeb644;
+  color: var(--cta-color);
 }
 .mini-cart-wrap:hover .mini-cart-content {
   -webkit-transform: none;
@@ -1036,7 +1044,7 @@ blockquote-title, .blockquote-title {
   padding: 8px 0;
 }
 .main-menu li.has-submenu .sub-menu li a:hover {
-  color: #eeb644;
+  color: var(--cta-color);
 }
 .main-menu li.has-submenu:hover .sub-menu {
   -webkit-transform: none;
@@ -1046,7 +1054,7 @@ blockquote-title, .blockquote-title {
   pointer-events: visible;
 }
 .main-menu li:hover a {
-  color: #eeb644;
+  color: var(--cta-color);
 }
 
 /* Responsive Mobile Menu */
@@ -1100,7 +1108,7 @@ blockquote-title, .blockquote-title {
   padding: 0;
 }
 .mobile-menu .slicknav_nav li a:hover {
-  color: #eeb644;
+  color: var(--cta-color);
   background-color: transparent;
 }
 .mobile-menu .slicknav_nav li img {
@@ -1120,7 +1128,7 @@ blockquote-title, .blockquote-title {
   position: relative;
 }
 .mobile-menu .slicknav_nav .slicknav_open > .slicknav_item .slicknav_arrow {
-  color: #eeb644;
+  color: var(--cta-color);
 }
 
 /*===========================
@@ -1150,7 +1158,7 @@ blockquote-title, .blockquote-title {
   color: #FFFFFF;
 }
 .footer-area .footer-copyright-area p a:hover {
-  color: #eeb644;
+  color: var(--cta-color);
 }
 
 .widget-item {
@@ -1186,7 +1194,7 @@ blockquote-title, .blockquote-title {
   transition: 0.2s;
 }
 .widget-list li a:hover {
-  color: #eeb644;
+  color: var(--cta-color);
   padding-left: 5px;
 }
 
@@ -1209,7 +1217,7 @@ blockquote-title, .blockquote-title {
 Scroll Top Button
 ----------------------------------*/
 .btn-scroll-top {
-  background-color: #eeb644;
+  background-color: var(--cta-color);
   border-radius: 50%;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
@@ -1294,14 +1302,24 @@ Scroll Top Button
   transition: 0.8s;
   opacity: 0;
 }
+
+.slider-slide-item .slide-img img {
+  max-width: 70%;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
   .slider-slide-item .slide-img img {
     max-width: 40%;
   }
 }
 @media only screen and (max-width: 767.98px) {
+  .slide-img {
+    display: flex;
+    justify-content: center;
+  }
   .slider-slide-item .slide-img img {
-    max-width: 180px;
+    /* max-width: 180px; */
+    max-width: 60%;
   }
 }
 
@@ -1328,7 +1346,7 @@ Scroll Top Button
   right: 50px;
 }
 .slider-area-wrapper .slick-arrow:hover {
-  background-color: #eeb644;
+  background-color: var(--cta-color);
 }
 .slider-area-wrapper .slick-dots {
   position: absolute;
@@ -1360,7 +1378,7 @@ Scroll Top Button
   width: 20px;
 }
 .slider-area-wrapper .slick-dots li.slick-active {
-  background-color: #eeb644;
+  background-color: var(--cta-color);
   width: 30px;
 }
 .slider-area-wrapper .slick-dots li button {
@@ -1697,7 +1715,7 @@ Scroll Top Button
   color: #1b1b1c;
 }
 .product-item__content .title a:hover {
-  color: #eeb644;
+  color: var(--cta-color);
 }
 .product-item__content .price {
   color: #666666;
@@ -1730,10 +1748,10 @@ Scroll Top Button
   margin-right: 0;
 }
 .product-item__action button:hover, .product-item__action a:hover {
-  color: #eeb644;
+  color: var(--cta-color);
 }
 .product-item .ratting {
-  color: #eeb644;
+  color: var(--cta-color);
   font-size: 18px;
   line-height: 1;
   text-align: center;
@@ -1989,7 +2007,7 @@ Scroll Top Button
   color: #FFFFFF;
 }
 .ht-countdown--light .countdown-item__time {
-  color: #eeb644;
+  color: var(--cta-color);
 }
 .ht-countdown--light .countdown-item__label {
   color: rgba(255, 255, 255, 0.6);
@@ -2085,7 +2103,7 @@ Scroll Top Button
   }
 }
 .newsletter-content h4 span {
-  color: #eeb644;
+  color: var(--cta-color);
 }
 .newsletter-content h2 {
   font-size: 32px;
@@ -2122,13 +2140,19 @@ Scroll Top Button
   padding: 12px 165px 12px 20px;
   width: 100%;
 }
+
+.newsletter-form-wrap .form-content input::placeholder {
+  color: #ffffff8a;
+}
+
+
 @media only screen and (max-width: 767.98px) {
   .newsletter-form-wrap .form-content input {
     padding: 15px;
   }
 }
 .newsletter-form-wrap .form-content .btn-newsletter {
-  background-color: #eeb644;
+  background-color: var(--cta-color);
   border-radius: 100px;
   color: #FFFFFF;
   font-size: 18px;
@@ -2218,7 +2242,7 @@ Scroll Top Button
   visibility: visible;
 }
 .off-canvas-wrapper .close-btn {
-  color: #eeb644;
+  color: var(--cta-color);
   font-size: 25px;
   line-height: 1;
   right: 0;
@@ -2235,7 +2259,7 @@ Scroll Top Button
   line-height: 1;
 }
 .off-canvas-wrapper .close-btn:hover {
-  color: #eeb644;
+  color: var(--cta-color);
 }
 .off-canvas-overlay {
   background-color: rgba(0, 0, 0, 0.8);
@@ -2369,13 +2393,13 @@ Scroll Top Button
   line-height: 1;
 }
 .breadcrumb li a:hover {
-  color: #eeb644;
+  color: var(--cta-color);
 }
 .breadcrumb li.current:after {
   display: none;
 }
 .breadcrumb li.current a {
-  color: #eeb644;
+  color: #ffffff8a;
   pointer-events: none;
 }
 
@@ -2446,9 +2470,9 @@ Scroll Top Button
   margin-top: 30px;
 }
 .contact-info-item .con-info-icon {
-  border: 1px solid #eeb644;
+  border: 1px solid var(--cta-color);
   border-radius: 100px;
-  color: #eeb644;
+  color: var(--cta-color);
   font-size: 35px;
   margin: 0 auto 20px;
   -webkit-transition: 0.4s;
@@ -2462,7 +2486,7 @@ Scroll Top Button
   margin-top: -2px;
 }
 .contact-info-item:hover .con-info-icon {
-  background-color: #eeb644;
+  background-color: var(--cta-color);
   color: #FFFFFF;
 }
 
@@ -2484,7 +2508,7 @@ Scroll Top Button
   width: 100%;
 }
 .input-item input:not([type=checkbox]):focus, .input-item textarea:focus {
-  border-color: #eeb644;
+  border-color: var(--cta-color);
 }
 .input-item .nice-select {
   border-color: #e1e1e1;
@@ -2580,8 +2604,8 @@ Scroll Top Button
   width: 45px;
 }
 .pagination--2 li:hover a, .pagination--2 li.active a {
-  border-color: #eeb644;
-  color: #eeb644;
+  border-color: var(--cta-color);
+  color: var(--cta-color);
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
@@ -2634,7 +2658,7 @@ Scroll Top Button
   font-weight: 500;
 }
 .sidebar-list li a:hover {
-  color: #eeb644;
+  color: var(--cta-color);
 }
 .sidebar-list li a span {
   color: #898989;
@@ -2675,7 +2699,7 @@ Scroll Top Button
   margin-bottom: 3px;
 }
 .sidebar-product .content .title:hover {
-  color: #eeb644;
+  color: var(--cta-color);
 }
 .sidebar-product .content .price {
   font-size: 14px;
@@ -2706,7 +2730,7 @@ Scroll Top Button
   width: 100%;
 }
 .sidebar-search form input:focus {
-  border-color: #eeb644;
+  border-color: var(--cta-color);
 }
 .sidebar-search form .btn-src {
   background-color: #1b1b1c;
@@ -2719,7 +2743,7 @@ Scroll Top Button
   width: 50px;
 }
 .sidebar-search form .btn-src:hover {
-  color: #eeb644;
+  color: var(--cta-color);
 }
 
 .tags li {
@@ -2737,8 +2761,8 @@ Scroll Top Button
   font-weight: 500;
 }
 .tags li a:hover {
-  color: #eeb644;
-  border-color: #eeb644;
+  color: var(--cta-color);
+  border-color: var(--cta-color);
 }
 
 /*================================
@@ -2849,7 +2873,7 @@ Scroll Top Button
   margin-right: 0;
 }
 .product-config .table .config-option a:hover {
-  color: #eeb644;
+  color: var(--cta-color);
 }
 
 .product-meta {
@@ -2873,7 +2897,7 @@ Scroll Top Button
   margin-right: 0;
 }
 .product-meta a:hover {
-  color: #eeb644;
+  color: var(--cta-color);
 }
 
 .pro-qty {
@@ -2919,8 +2943,8 @@ Scroll Top Button
   }
 }
 .pro-qty a:hover {
-  background-color: #eeb644;
-  border-color: #eeb644;
+  background-color: var(--cta-color);
+  border-color: var(--cta-color);
   color: #FFFFFF;
 }
 .pro-qty a.inc {
@@ -2964,7 +2988,7 @@ Scroll Top Button
   border: none;
 }
 .product-description-review .desc-review-tab-menu li button.active {
-  background-color: #eeb644;
+  background-color: var(--cta-color);
 }
 @media only screen and (max-width: 767.98px) {
   .product-description-review .desc-review-tab-menu li button {
@@ -3028,7 +3052,7 @@ Scroll Top Button
   font-size: 13px;
 }
 .product-rating-wrap .display-ratings .rating-item .rating-author-txt .rating-star {
-  color: #eeb644;
+  color: var(--cta-color);
   font-size: 14px;
   margin-bottom: 5px;
 }
@@ -3064,7 +3088,7 @@ Scroll Top Button
 }
 .product-rating-wrap .rating-form-wrapper .rating-form .rating-star:hover i {
   cursor: pointer;
-  color: #eeb644;
+  color: var(--cta-color);
 }
 .product-rating-wrap .rating-form-wrapper .rating-form input, .product-rating-wrap .rating-form-wrapper .rating-form textarea {
   background-color: #FFFFFF;
@@ -3076,7 +3100,7 @@ Scroll Top Button
   transition: 0.4s;
 }
 .product-rating-wrap .rating-form-wrapper .rating-form input:focus, .product-rating-wrap .rating-form-wrapper .rating-form textarea:focus {
-  border-color: #eeb644;
+  border-color: var(--cta-color);
 }
 
 /*==================================
@@ -3106,7 +3130,7 @@ Scroll Top Button
   color: #303030;
 }
 .shopping-cart-table .product-list .remove-icon button:hover {
-  color: #eeb644;
+  color: var(--cta-color);
 }
 .shopping-cart-table .product-list .product-thumb {
   display: block;
@@ -3118,7 +3142,7 @@ Scroll Top Button
   line-height: 1;
 }
 .shopping-cart-table .product-list .product-name:hover {
-  color: #eeb644;
+  color: var(--cta-color);
 }
 .shopping-cart-table .pro-qty {
   width: 120px;
@@ -3152,7 +3176,7 @@ Scroll Top Button
   font-weight: 700;
 }
 .cart-coupon-update-area button:hover {
-  color: #eeb644;
+  color: var(--cta-color);
 }
 .cart-coupon-update-area .coupon-form-wrap {
   width: 55%;
@@ -3176,7 +3200,7 @@ Scroll Top Button
   width: 100%;
 }
 .cart-coupon-update-area .coupon-form-wrap form input:focus {
-  border-color: #eeb644;
+  border-color: var(--cta-color);
 }
 .cart-coupon-update-area .coupon-form-wrap form .btn-apply {
   position: absolute;
@@ -3232,7 +3256,7 @@ Scroll Top Button
 .table-responsive::-webkit-scrollbar-thumb, .list::-webkit-scrollbar-thumb {
   border-radius: 0;
   border: 0;
-  background-color: #eeb644;
+  background-color: var(--cta-color);
 }
 .table-responsive::-webkit-scrollbar, .list::-webkit-scrollbar {
   background-color: rgba(238, 182, 68, 0.3);
@@ -3246,8 +3270,8 @@ Scroll Top Button
           box-shadow: none;
 }
 .form-check-input:checked {
-  border-color: #eeb644;
-  background-color: #eeb644;
+  border-color: var(--cta-color);
+  background-color: var(--cta-color);
 }
 
 /*==========================================
@@ -3258,7 +3282,7 @@ Scroll Top Button
   padding: 0;
 }
 .checkout-page-coupon-area .card h3 {
-  background-color: #eeb644;
+  background-color: var(--cta-color);
   color: #1b1b1c;
   font-size: 16px;
   line-height: 1.2;
@@ -3525,7 +3549,7 @@ Scroll Top Button
   font-family: "Oswald", sans-serif;
 }
 .blog-item__info .post-meta a a:hover, .blog-item__info .post-meta span a:hover {
-  color: #eeb644;
+  color: var(--cta-color);
 }
 .blog-item__info .post-meta span:after {
   content: "|";
@@ -3544,7 +3568,7 @@ Scroll Top Button
   color: #1b1b1c;
 }
 .blog-item__info .post-title a:hover {
-  color: #eeb644;
+  color: var(--cta-color);
 }
 
 /*==============================
@@ -3723,7 +3747,7 @@ Start Comment Area Wrapper
   color: #1b1b1c;
 }
 .single-comment-wrap .comment-footer a.btn-reply:hover {
-  color: #eeb644;
+  color: var(--cta-color);
 }
 
 /*==================================
@@ -3831,7 +3855,7 @@ Start Comment Area Wrapper
 }
 .login-form-style form .login-toggle-btn a:hover,
 .register-form-style form .login-toggle-btn a:hover {
-  color: #eeb644;
+  color: var(--cta-color);
 }
 .login-form-style form .login-btn button,
 .register-form-style form .login-btn button {
@@ -3851,5 +3875,5 @@ Start Comment Area Wrapper
 }
 .login-form-style form .login-btn button:hover,
 .register-form-style form .login-btn button:hover {
-  background-color: #eeb644;
+  background-color: var(--cta-color);
 }
